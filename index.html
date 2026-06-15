@@ -58,7 +58,7 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .project-desc { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem; }
 .tech-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
 .tech-pill { font-family: var(--mono); font-size: 10px; padding: 3px 8px; background: rgba(0,135,255,0.08); color: var(--accent2); border: 1px solid rgba(0,135,255,0.2); letter-spacing: 0.05em; }
-.project-links { display: flex; gap: 1rem; margin-bottom: 0.75rem; }
+.project-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .project-link { font-family: var(--mono); font-size: 11px; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; display: flex; align-items: center; gap: 4px; transition: color 0.2s; cursor: pointer; background: none; border: none; }
 .project-link:hover { color: var(--accent); }
 .project-visual { background: var(--bg3); border: 1px solid var(--border); padding: 1.25rem; font-family: var(--mono); font-size: 11px; color: var(--accent); line-height: 1.8; position: relative; overflow: hidden; }
@@ -117,7 +117,7 @@ footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; display: fle
   <div class="hero-label">AI Engineer</div>
   <h1>Hi, I'm<br><span class="name-accent">Valen.</span></h1>
   <div class="hero-sub"><span id="typed-text">Building intelligent systems</span><span class="typing-cursor"></span></div>
-  <p class="hero-desc">Artificial Intelligence student at BINUS University with hands-on experience in NLP, Computer Vision, and Generative Models.</p>
+  <p class="hero-desc">Artificial Intelligence Student at BINUS University with hands-on experience in NLP, Computer Vision, and Generative Models.</p>
   <div class="hero-actions">
     <a class="btn-primary" href="https://drive.google.com/file/d/1bQMG8huNyAUoWihhoxbFhmW28JkNOpUJ/view?usp=sharing" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center;">Download CV</a>
     <button class="btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
@@ -125,7 +125,7 @@ footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; display: fle
 </section>
 
 <div class="stats-bar">
-  <div class="stat-item"><span class="stat-num">5</span><span class="stat-label">AI Projects</span></div>
+  <div class="stat-item"><span class="stat-num">5</span><span class="stat-label">Projects</span></div>
   <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">Deployed Models</span></div>
   <div class="stat-item"><span class="stat-num">5+</span><span class="stat-label">Frameworks</span></div>
   <div class="stat-item"><span class="stat-num">2028</span><span class="stat-label">Graduation</span></div>
@@ -155,6 +155,7 @@ footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; display: fle
         </div>
         <div class="project-links">
           <a class="project-link" href="https://github.com/ChYpHuTh14/cyberbullying-detection" target="_blank"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+          <a class="project-link" href="https://indobert-cyberbullying-detection.streamlit.app/" target="_blank"><i class="ti ti-external-link" aria-hidden="true"></i> Live Demo</a>
           <a class="project-link" href="https://huggingface.co/ChYpHuTh14/indobert-cyberbullying" target="_blank"><i class="ti ti-robot" aria-hidden="true"></i> HuggingFace</a>
         </div>
         <div class="expand-toggle" data-toggle><i class="ti ti-chevron-down" aria-hidden="true"></i> View details</div>
@@ -168,8 +169,8 @@ model = AutoModelForSequenceClassification.<span class="fn">from_pretrained</spa
   num_labels=<span class="fn">2</span>
 )
 
-<span class="comment"># ~2000 samples, binary classification</span>
-<span class="comment"># Acc: 89.3% | F1: 0.88</span>
+<span class="comment"># ~4000 samples, binary classification</span>
+<span class="comment"># Acc: 72.3% | F1: 0.71</span>
 
 trainer = Trainer(
   model=model,
@@ -276,6 +277,7 @@ trainer.<span class="fn">train</span>()
       </div>
       <div class="project-links">
         <a class="project-link" href="https://github.com/ChYpHuTh14/lisentra" target="_blank"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+        <a class="project-link" href="https://lisentra.streamlit.app/" target="_blank"><i class="ti ti-external-link" aria-hidden="true"></i> Live Demo</a>
         <a class="project-link" href="https://huggingface.co/ChYpHuTh14/wav2vec2-lisentra" target="_blank"><i class="ti ti-robot" aria-hidden="true"></i> HuggingFace</a>
       </div>
       <div class="expand-toggle" data-toggle><i class="ti ti-chevron-down" aria-hidden="true"></i> View details</div>
@@ -311,6 +313,7 @@ trainer.<span class="fn">train</span>()
       </div>
       <div class="project-links">
         <a class="project-link" href="https://github.com/ChYpHuTh14/Diabetic_Retinopathy_EfficientNetB3" target="_blank"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+        <a class="project-link" href="https://diabetic-retinopathy-efficientnetb3.streamlit.app/" target="_blank"><i class="ti ti-external-link" aria-hidden="true"></i> Live Demo</a>
       </div>
       <div class="expand-toggle" data-toggle><i class="ti ti-chevron-down" aria-hidden="true"></i> View details</div>
       <div class="project-detail">
